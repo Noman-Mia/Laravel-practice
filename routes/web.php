@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+//request
 Route::get('/about',[DemoController::class,"DemoAction"] );
 Route::get("/hello/{name}/{age}",[DemoController::class,"DemoSave"] );
+Route::get("/jsonBody",[DemoController::class,"DemoJsonBody"] );
