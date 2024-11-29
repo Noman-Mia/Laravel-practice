@@ -25,4 +25,27 @@ class DemoController extends Controller
      $age =$request->input("age");
      return response("my name is {$name} and age is {$age}");
    }
+
+   //Request Header
+   function DemoHeader(Request $request):string{
+      $name =$request->header("name");
+      $age =$request->header("age");
+      return response("name {$name},age {$age}");
+   }
+
+   //All in one like, URLparameters, JsonBody,Header
+   function URLparametersJsonBodyHeader (Request $request):array{
+      $name =$request->header("name");
+      $age =$request->header("age");
+      $city =$request->input("city");
+      $postcode =$request->input("postcode");
+      return array(
+         "name"=> $name,
+         "age"=> $age,
+         "city"=> $city,
+         "postcode"=> $postcode
+
+      );
+   }
+      
 }
