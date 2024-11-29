@@ -23,6 +23,6 @@ class DemoController extends Controller
    function DemoJsonBody(Request $request){
      $name =$request->input("name");
      $age =$request->input("age");
-     return response("my name is {$name}and age is {$age}");
+     return response("my name is {$name} and age is {$age}");
    }
 }
