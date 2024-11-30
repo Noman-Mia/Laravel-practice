@@ -14,3 +14,5 @@ Route::get("/DemoHeader",[DemoController::class,"DemoHeader"] );
 Route::get("/hello/{name}/{age}",[DemoController::class,"URLparametersJsonBodyHeader"] );
 Route::post("/formData",[DemoController::class,"FormData"] );
 Route::post("/fileUpload",[DemoController::class,"fileUpload"] );
+Route::post("/IpAddress",[DemoController::class,"IpAddress"] );
+Route::post("/ContentNeg",[DemoController::class,"ContentNeg"] );

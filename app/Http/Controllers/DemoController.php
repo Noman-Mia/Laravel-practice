@@ -78,8 +78,24 @@ class DemoController extends Controller
      $fileName->storeAs("upload",$fileName->getClientOriginalName());
      $fileName->move(public_path("upload"),$fileName->getClientOriginalName());
      return true;
-    
-    
-
     }
+
+    //request ip
+    function IpAddress(Request $request):string{
+      $ip = $request->ip();
+      return $ip ;
+    }
+
+    //content negotiation
+    function ContentNeg(Request $request):int{
+
+        if($request->accepts(["application/json"])){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+
+    //request cookies
 }
