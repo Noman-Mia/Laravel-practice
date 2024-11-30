@@ -12,3 +12,5 @@ Route::get("/hello/{name}/{age}",[DemoController::class,"DemoSave"] );
 Route::get("/jsonBody",[DemoController::class,"DemoJsonBody"] );
 Route::get("/DemoHeader",[DemoController::class,"DemoHeader"] );    
 Route::get("/hello/{name}/{age}",[DemoController::class,"URLparametersJsonBodyHeader"] );
+
+Route::post("/formData",[DemoController::class,"FormData"] );

@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Faker\Extension\FileExtension;
 use Illuminate\Http\Request;
+
+use function PHPUnit\Framework\fileExists;
 
 //Request
 class DemoController extends Controller
@@ -47,5 +50,25 @@ class DemoController extends Controller
 
       );
    }
-      
+
+   //Multipart/From-Data -> I can upload file
+   function FormData(Request $request)
+   {
+       $photoFile = $request->file("photo");
+
+       $fileSize = $photoFile->getSize();
+       $fileType = $photoFile->getMimeType();
+       $fileGetContents = file_get_contents($photoFile->getRealPath());
+        $FileOriginalName = $photoFile->getClientOriginalName();
+        $FileTempName = $photoFile->hashName();
+        $FileExtension = $photoFile->getClientOriginalExtension();
+   
+        return response()->json([
+            "fileSize"=> $fileSize,
+            "fileType"=> $fileType,
+            "name"=> $FileOriginalName,
+            "FileTempName"=> $FileTempName,
+            "FileExtension"=> $FileExtension,
+        ]);
+   }
 }
