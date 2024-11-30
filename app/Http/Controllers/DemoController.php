@@ -71,4 +71,15 @@ class DemoController extends Controller
             "FileExtension"=> $FileExtension,
         ]);
    }
+
+    //file upload 
+    function fileUpload (Request $request){
+     $fileName = $request->file("photo");
+     $fileName->storeAs("upload",$fileName->getClientOriginalName());
+     $fileName->move(public_path("upload"),$fileName->getClientOriginalName());
+     return true;
+    
+    
+
+    }
 }
