@@ -59,9 +59,9 @@ class DemoController extends Controller
        $fileSize = $photoFile->getSize();
        $fileType = $photoFile->getMimeType();
        $fileGetContents = file_get_contents($photoFile->getRealPath());
-        $FileOriginalName = $photoFile->getClientOriginalName();
-        $FileTempName = $photoFile->hashName();
-        $FileExtension = $photoFile->getClientOriginalExtension();
+       $FileTempName = $photoFile->hashName();
+       $FileOriginalName = $photoFile->getClientOriginalName();
+       $FileExtension = $photoFile->getClientOriginalExtension();
    
         return response()->json([
             "fileSize"=> $fileSize,
@@ -98,4 +98,7 @@ class DemoController extends Controller
     }
 
     //request cookies
+    function DemoCookies(Request $request):array{
+      return $request->cookie();
+    }
 }

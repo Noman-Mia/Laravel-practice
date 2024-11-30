@@ -16,3 +16,4 @@ Route::post("/formData",[DemoController::class,"FormData"] );
 Route::post("/fileUpload",[DemoController::class,"fileUpload"] );
 Route::post("/IpAddress",[DemoController::class,"IpAddress"] );
 Route::post("/ContentNeg",[DemoController::class,"ContentNeg"] );
+Route::post("/DemoCookies",[DemoController::class,"DemoCookies"] );
