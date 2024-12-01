@@ -22,3 +22,8 @@ Route::post("/DemoCookies",[DemoController::class,"DemoCookies"] );
 Route::post("/DemoJson",[DemoController::class,"DemoJson"] );
 Route::get("/redirect1",[DemoController::class,"RedirectOne"] );
 Route::get("/redirect2",[DemoController::class,"RedirectTwo"] );
+Route::get("/fileBinary",[DemoController::class,"fileBinary"] );
+Route::get("/fileDownload",[DemoController::class,"fileDownload"] );
+Route::get("/Cookies",[DemoController::class,"Cookies"] );
+Route::post("/resHeader",[DemoController::class,"resHeader"] );
+Route::get("/view",[DemoController::class,"view"] );

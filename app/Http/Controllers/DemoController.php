@@ -120,4 +120,43 @@ class DemoController extends Controller
     function RedirectTwo(){
         return 'hello2';
     }
+
+    //file binary
+    function FileBinary(){
+        $filePath = "upload/camera.jpg";
+        return response()->file($filePath);
+    }
+
+    //file download
+    function FileDownload(){
+        $filePath = "upload/camera.jpg";
+        return response()->download($filePath);
+    }
+
+    //cookies set 
+    function Cookies(){
+        $name = "token";
+        $value = "this is my data";
+        $minutes = 60;
+        $path = "/";
+        $domain = $_SERVER['SERVER_NAME'];
+        $secure = false;
+        $httpOnly = true;
+
+        return response('hi') ->cookie(
+            $name, $value,$minutes, $path,$domain,$secure, $httpOnly
+        );
+    }
+
+    //response header
+    function resHeader(){
+        return response('hi') 
+        ->header('key1','header value')
+        ->header('key2','header value');
+    }
+
+    //view 
+    function view(){
+        return view('home');
+    }
 }
