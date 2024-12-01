@@ -17,3 +17,8 @@ Route::post("/fileUpload",[DemoController::class,"fileUpload"] );
 Route::post("/IpAddress",[DemoController::class,"IpAddress"] );
 Route::post("/ContentNeg",[DemoController::class,"ContentNeg"] );
 Route::post("/DemoCookies",[DemoController::class,"DemoCookies"] );
+
+//response
+Route::post("/DemoJson",[DemoController::class,"DemoJson"] );
+Route::get("/redirect1",[DemoController::class,"RedirectOne"] );
+Route::get("/redirect2",[DemoController::class,"RedirectTwo"] );

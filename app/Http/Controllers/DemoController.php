@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Faker\Extension\FileExtension;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 use function PHPUnit\Framework\fileExists;
@@ -100,5 +101,23 @@ class DemoController extends Controller
     //request cookies
     function DemoCookies(Request $request):array{
       return $request->cookie();
+    }
+
+
+    //Response
+    //json response
+    function DemoJson(Request $request):JsonResponse{
+        $code = 401;
+        $content = array('name'=>'jack','city'=>'dhaka');
+        return response()->json($content, $code);
+    }
+
+    //Redirect
+    function RedirectOne()  {
+        return redirect('/redirect2 ');
+    }
+
+    function RedirectTwo(){
+        return 'hello2';
     }
 }
