@@ -1,6 +1,8 @@
-        @extends('site.layout')
 
-        @section('content')
+@extends('site.layout')
+
+@section('content')
+        
         <!-- # main content
         ================================================== -->
         <article class="s-content">
@@ -434,5 +436,4 @@
 
     </div> <!-- end page-wrap -->
 
-
-  @endsection
+@endsection

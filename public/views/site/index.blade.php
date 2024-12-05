@@ -1,172 +1,234 @@
-        @extends('site.layout')
+@extends('site.layout')
 
-        @section('content')
-        <!-- # main content
+@section('content')
+        <!-- # intro
         ================================================== -->
-        <article class="s-content">
+        <section id="intro" class="s-intro">
 
-            <!-- ## pageheader -->
-            <section class="s-pageheader" style="background-image:url(images/pageheader/pageheader-about-bg-3000.jpg)">
-                <div class="row">
-                    <div class="column xl-12 s-pageheader__content">
-                        <h1 class="page-title">                        
-                            Passion & Flavor
-                        </h1>                    
-                    </div>
-                </div>
-            </section> <!-- end pageheader -->
+            <div class="s-intro__bg"></div>
+
+            <div class="row s-intro__content">
+                <div class="column xl-12">
+
+                    <div class="s-intro__pretitle">Welcome to</div>
+                    <h1 class="s-intro__title">Maillard</h1>
+
+                    <p class="s-intro__desc lead">
+                    Allow us to lead you on a culinary journey, 
+                    exploring a myriad of flavors and introducing 
+                    you to new and exciting tastes. 
+                    </p>
+
+                </div>                
+            </div> <!-- s-intro__content -->     
             
-            <!-- ## pagecontent -->
-            <section class="s-pagecontent pagecontent">
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                    <div class="scroll-icon">
+                        <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m5.214 14.522s4.505 4.502 6.259 6.255c.146.147.338.22.53.22s.384-.073.53-.22c1.754-1.752 6.249-6.244 6.249-6.244.144-.144.216-.334.217-.523 0-.193-.074-.386-.221-.534-.293-.293-.766-.294-1.057-.004l-4.968 4.968v-14.692c0-.414-.336-.75-.75-.75s-.75.336-.75.75v14.692l-4.979-4.978c-.289-.289-.761-.287-1.054.006-.148.148-.222.341-.221.534 0 .189.071.377.215.52z" fill-rule="nonzero"/></svg>
+                    </div>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
 
-                <div class="row width-narrower pageintro text-center">
-                    <div class="column xl-12">
-                        <p class="lead">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eos quas blanditiis, quos sint nostrum fugit aperiam 
-                        inventore optio itaque molestias corporis, ipsa tenetur eligendi nihil iste porro, natus culpa consequuntur? Maxime, 
-                        corporis tempore. Sed tenetur veritatis velit recusandae eum. 
-                        </p>
-                    </div>                       
-                </div> <!-- end pageintro -->              
-    
-                <div class="row width-narrow content-block content-block--media-right">
-                    <div class="column content-block__text">
-                        <h3>Where Passion Meets Flavor</h3>
-                        <p>
-                        Eaque temporibus culpa perferendis expedita assumenda mollitia magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        facilis voluptates voluptatum animi numquam quas ea praesentium quaerat maxime sunt odit inventore itaque est et autem sequi nulla. 
-                        Distinctio obcaecati nesciunt asperiores dolorum tenetur voluptates, nemo alias doloremque.
-                        </p>
-                    </div>
-                    <div class="column content-block__media">
-                        <figure>
-                            <img src="images/about/about-img-01.jpg" 
-                                 srcset="images/about/about-img-01.jpg 1x, images/about/about-img-01@2x.jpg 2x" alt="">
-                        </figure>
-                    </div>
-                </div> <!-- end content-block-->
-    
-                <div class="row width-narrow content-block content-block--media-left">    
-                    <div class="column content-block__text">
-                        <h3>A Dining Experience to Remember</h3>
-                        <p>
-                        Eaque temporibus culpa perferendis expedita assumenda mollitia magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        facilis voluptates voluptatum animi numquam quas ea praesentium quaerat maxime sunt odit inventore itaque est et autem sequi nulla. 
-                        Distinctio obcaecati nesciunt asperiores dolorum tenetur voluptates, nemo alias doloremque.
-                        </p>
-                        <p>
-                        Voluptates voluptatum animi numquam quas ea praesentium quaerat maxime sunt odit 
-                        inventore itaque est et autem sequi nulla. 
-                        </p>
-                    </div>
-                    <div class="column content-block__media">
-                        <figure>
-                            <img src="images/about/about-img-02.jpg" 
-                                 srcset="images/about/about-img-02.jpg 1x, images/about/about-img-02@2x.jpg 2x" alt="">
-                        </figure>
-                    </div>
-                </div> <!-- end content-block-->
-    
-                <div class="row width-narrow content-block content-block--media-right">
-                    <div class="column content-block__text">                        
-                        <h3>Locally Inspired, Sustainably Sourced</h3>
-                        <p>
-                        Eaque temporibus culpa perferendis expedita assumenda mollitia magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        facilis voluptates voluptatum animi numquam quas ea praesentium quaerat maxime sunt odit inventore itaque est et autem sequi nulla. 
-                        Distinctio obcaecati nesciunt asperiores dolorum tenetur voluptates, nemo alias doloremque.
-                        </p>
-                    </div>
-                    <div class="column content-block__media">
-                        <figure>
-                            <img src="images/about/about-img-03.jpg" 
-                                 srcset="images/about/about-img-03.jpg 1x, images/about/about-img-03@2x.jpg 2x" alt="">
-                        </figure>
-                    </div>
-                </div> <!-- end content-block-->
-    
-                <div class="row width-narrow content-block content-block--grey">
-                    <div class="column xl-12">     
-                        <h3>Our Culinary Excellence</h3>
-                        <p>
-                        Eaque temporibus culpa perferendis expedita assumenda mollitia magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit
-                        facilis voluptates voluptatum animi numquam quas ea praesentium quaerat maxime sunt odit inventore itaque est et autem sequi nulla. 
-                        Distinctio obcaecati nesciunt asperiores dolorum tenetur voluptates, nemo alias doloremque. Quos cumque ipsum laudantium odio vero 
-                        aut odit nostrum aliquam? Nostrum in facilis, minus fuga quasi voluptas explicabo possimus incidunt, expedita tempora eius rem nobis sequi. 
-                        Doloribus esse sint suscipit quam nisi blanditiis voluptate explicabo.
-                        </p>
-                    </div>
-                </div> <!-- end content-block -->
+        </section> <!-- end s-intro -->
 
-                <div class="row width-narrow content-block">
-                    <div class="column xl-12"> 
-    
-                        <h3>Our Culinary Philosophy</h3>
-    
-                        <div class="grid-list-items list-items">
-                            <div class="grid-list-items__item list-items__item u-remove-bottom">
-                                <div class="list-items__item-header">
-                                    <h6 class="list-items__item-small-title">Quality</h6>
-                                </div>
-                                <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus consectetur adipisicing elit excepturi corrupti 
-                                nam quae exercitationem cupiditate, provident ipsa delectus vero possimus reprehenderit quas ut officiis tempora voluptatum 
-                                .
-                                </p>
-                            </div>
-                            <div class="grid-list-items__item list-items__item u-remove-bottom">
-                                <div class="list-items__item-header">
-                                    <h6 class="list-items__item-small-title">Heritage</h6>
-                                </div>
-                                <p> 
-                                Molestias, autem impedit culpa dolores excepturi, quidem unde ducimus, rerum commodi deserunt earum, minus voluptatum.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe doloremque provident quas.
-                                </p>
-                            </div>
-                            <div class="grid-list-items__item list-items__item u-remove-bottom">
-                                <div class="list-items__item-header">
-                                    <h6 class="list-items__item-small-title">Precision</h6>
-                                </div>
-                                <p>
-                                Mollitia accusamus consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit excepturi corrupti 
-                                nam quae exercitationem cupiditate, provident ipsa delectus vero possimus reprehenderit quas ut officiis tempora voluptatum. 
-                                
-                                </p>
-                            </div>
-                            <div class="grid-list-items__item list-items__item u-remove-bottom">
-                                <div class="list-items__item-header">
-                                    <h6 class="list-items__item-small-title">Harmony</h6>
-                                </div>
-                                <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus consectetur adipisicing elit excepturi corrupti 
-                                nam quae exercitationem cupiditate, provident ipsa delectus vero possimus reprehenderit quas ut officiis tempora voluptatum.
-                                </p>
-                            </div>
-                            <div class="grid-list-items__item list-items__item u-remove-bottom">
-                                <div class="list-items__item-header">
-                                    <h6 class="list-items__item-small-title">Inclusivity</h6>
-                                </div>
-                                <p> 
-                                Molestias, autem impedit culpa dolores excepturi, quidem unde ducimus, rerum commodi deserunt earum, minus voluptatum.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe doloremque provident quas.
-                                </p>
-                            </div>
-                            <div class="grid-list-items__item list-items__item u-remove-bottom">
-                                <div class="list-items__item-header">
-                                    <h6 class="list-items__item-small-title">Innovation</h6>
-                                </div>
-                                <p>
-                                Mollitia accusamus consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisicing elit excepturi corrupti 
-                                nam quae exercitationem cupiditate, provident ipsa delectus vero possimus reprehenderit quas ut officiis tempora voluptatum. 
-                                </p>
-                            </div>
-                        </div> <!--list-items --> 
 
-                    </div> <!-- end column-->
-                </div> <!-- end content-block -->  
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about">
 
-            </section> <!-- pagecontent --> 
+            <div class="row s-about__content">
+                <div class="column xl-12 s-about__content-grid grid-block">    
+                    
+                    <div class="s-about__content-header section-header">
+                        <h2 class="text-display-title with-line">Our Story</h2>                        
+                        <div class="s-about__content-header-inner">
+                            <p class="text-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam nobis ex ea laborum vitae, consequatur quae vel alias voluptate dolores, dolor ab at ratione.
+                            </p>
+                            
+                            <div class="s-about__content-media">
+                                <img class="s-about__media-big" 
+                                     src="images/home-about-img.jpg" 
+                                     srcset="images/home-about-img.jpg 1x, images/home-about-img@2x.jpg 2x" alt="">
+                                <img class="s-about__media-small" 
+                                     src="images/home-about-img-small.jpg" 
+                                     srcset="images/home-about-img-small.jpg 1x, home-about-img-small@2x.jpg 2x" alt="">
+                            </div>
+                        </div>
+                    </div> <!-- end s-about__content-header -->      
+                    
+                    <div class="s-about__content-main">
 
-        </article> <!-- end main content -->
+                        <p class="attention-getter">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas explicabo 
+                        id debitis cupiditate cumque, error quia! Debitis cupiditate ipsa nihil labore,
+                        earum atque dolor quos saepe vero inventore, odit nam deleniti accusantium 
+                        omnis mollitia consequatur harum incidunt.
+                        </p>                        
+                        <p class="attention-getter">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit. Ut enim ad minim     
+                        </p>
+                        <p class="attention-getter">
+                        Commodi recusandae labore sit. Perspiciatis omnis dolor dolores fuga iusto, 
+                        recusandae animi nisi consequuntur exercitationem id maxime earum pariatur 
+                        voluptas. Porro non quos quae tempora fuga quis sequi minus sed sint debitis 
+                        reiciendis, nostrum natus suscipit iusto odio.
+                        </p>                                            
+
+                        <div class="s-about__content-btn">
+                            <a href="about.html" class="btn btn--stroke btn--medium u-fullwidth">Discover More</a>
+                        </div>
+
+                    </div> <!-- end s-about-content-main -->  
+
+                </div> <!-- end s-about__content-grid -->
+            </div> <!--end s-about__content -->            
+            
+        </section> <!-- end s-about -->   
+
+
+        <!-- # menu block
+        ================================================== -->
+        <section class="s-menublock">
+
+            <div class="row s-menublock__top">    
+                <div class="column xl-8 lg-12">
+
+                    <div class="s-menublock__content-header section-header">
+                        <h2 class="text-display-title with-line">Our Signature Dishes</h2>
+                        <p class="attention-getter">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis 
+                        aperiam est, laborum iure, delectus rerum impedit nisi, ducimus in excepturi 
+                        fugit nulla expedita vitae delectus rerum impedit laborum iure voluptate.
+                        </p>                  
+                    </div> <!-- end s-menublock__content-header --> 
+
+                </div>
+            </div> <!-- end s-menublock__top --> 
+
+            <div class="row">
+                <div class="column xl-12 menublock__slider-nav">
+                    <a href="menu.html" class="menu-link">Explore All Menu</a>
+
+                    <div class="menublock-buttons">
+                        <div class="menublock-btn-prev">
+                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9.474 5.209s-4.501 4.505-6.254 6.259c-.147.146-.22.338-.22.53s.073.384.22.53c1.752 1.754 6.252 6.257 6.252 6.257.145.145.336.217.527.217.191-.001.383-.074.53-.221.293-.293.294-.766.004-1.057l-4.976-4.976h14.692c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-14.692l4.978-4.979c.289-.289.287-.761-.006-1.054-.147-.147-.339-.221-.53-.221-.191-.001-.38.071-.525.215z" fill-rule="nonzero"/></svg>
+                        </div>
+                        <div class="menublock-btn-next">
+                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z" fill-rule="nonzero"/></svg>
+                        </div>
+                    </div>
+                </div> <!-- end s-menublock__slider-nav -->
+            </div>
+
+            <div class="row s-menublock__slider-wrap">
+                <div class="column xl-12">                     
+
+                    <div class="swiper-container s-menublock__slider">    
+                        <div class="swiper-wrapper">
+
+                            <div class="s-menublock__slide swiper-slide">    
+                                <div class="menublock-item">
+                                    <div class="menublock-item__thumb">
+                                        <img src="images/menu/steak.jpg" 
+                                             srcset="images/menu/steak.jpg 1x, images/menu/steak@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="menublock-item__text">
+                                        <h5>Grilled Sirloin Steak</h5>
+                                        <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                    </div>
+                                    <div class="menublock-item__price-wrap">
+                                        <div class="menublock-item__price">
+                                            <span>$</span>18
+                                        </div>
+                                    </div>
+                                </div> <!-- end menublock-item -->
+                            </div> <!-- end s-menublock__slide -->
+
+                            <div class="s-menublock__slide swiper-slide">    
+                                <div class="menublock-item">
+                                    <div class="menublock-item__thumb">
+                                        <img src="images/menu/pasta.jpg" 
+                                             srcset="images/menu/pasta.jpg 1x, images/menu/pasta@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="menublock-item__text">
+                                        <h5>Marinara Fettucine</h5>
+                                        <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                    </div>
+                                    <div class="menublock-item__price-wrap">
+                                        <div class="menublock-item__price">
+                                            <span>$</span>15
+                                        </div>
+                                    </div>
+                                </div> <!-- end menublock-item -->
+                            </div> <!-- end s-menublock__slide -->
+
+                            <div class="s-menublock__slide swiper-slide">    
+                                <div class="menublock-item">
+                                    <div class="menublock-item__thumb">
+                                        <img src="images/menu/toast.jpg" 
+                                             srcset="images/menu/toast.jpg 1x, images/menu/toast@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="menublock-item__text">
+                                        <h5>Egg Salad Avocado Toast</h5>
+                                        <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                    </div>
+                                    <div class="menublock-item__price-wrap">
+                                        <div class="menublock-item__price">
+                                            <span>$</span>10
+                                        </div>
+                                    </div>
+                                </div> <!-- end menublock-item -->
+                            </div> <!-- end s-menublock__slide -->
+
+                            <div class="s-menublock__slide swiper-slide">    
+                                <div class="menublock-item">
+                                    <div class="menublock-item__thumb">
+                                        <img src="images/menu/icecream.jpg" 
+                                             srcset="images/menu/icecream.jpg 1x, images/menu/icecream@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="menublock-item__text">
+                                        <h5>Vanilla Ice Cream</h5>
+                                        <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                    </div>
+                                    <div class="menublock-item__price-wrap">
+                                        <div class="menublock-item__price">
+                                            <span>$</span>4
+                                        </div>
+                                    </div>
+                                </div> <!-- end menublock-item -->
+                            </div> <!-- end s-menublock__slide -->
+
+                            <div class="s-menublock__slide swiper-slide">    
+                                <div class="menublock-item">
+                                    <div class="menublock-item__thumb">
+                                        <img src="images/menu/yogurt.jpg" 
+                                             srcset="images/menu/yogurt.jpg 1x, images/menu/yogurt@2x.jpg 2x" alt="">
+                                    </div>
+                                    <div class="menublock-item__text">
+                                        <h5>Yogurt With Strawberries</h5>
+                                        <p>Lorem ipsum dolor, sit amet consectetur.</p>
+                                    </div>
+                                    <div class="menublock-item__price-wrap">
+                                        <div class="menublock-item__price">
+                                            <span>$</span>4
+                                        </div>
+                                    </div>
+                                </div> <!-- end menublock-item -->
+                            </div> <!-- end s-menublock__slide -->
+        
+                        </div> <!-- end swiper-wrapper -->                      
+                    </div> <!-- end s-menublock__slider -->
+
+                </div>
+            </div> <!-- s-menublock__slider-wrap -->
+
+        </section> <!-- end s-menublock -->     
 
 
         <!-- # testimonials
@@ -434,5 +496,4 @@
 
     </div> <!-- end page-wrap -->
 
-
-  @endsection
+@endsection

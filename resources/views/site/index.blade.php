@@ -1,6 +1,7 @@
-@extends('site.layout')
 
-@section('content')
+    @extends('site.layout')
+
+    @section('content')
         <!-- # intro
         ================================================== -->
         <section id="intro" class="s-intro">
@@ -496,4 +497,5 @@
 
     </div> <!-- end page-wrap -->
 
-@endsection
+
+   @endsection

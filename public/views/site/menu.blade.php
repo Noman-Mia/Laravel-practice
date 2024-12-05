@@ -1,7 +1,6 @@
+@extends('site.layout')
 
-    @extends('site.layout')
-
-    @section('content')
+@section('content')
         
         <!-- # main content
         ================================================== -->
@@ -485,6 +484,5 @@
         </footer> <!-- end s-footer -->
 
     </div> <!-- end page-wrap -->
-
 
 @endsection

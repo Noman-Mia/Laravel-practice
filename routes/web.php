@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\DemoHasinController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
@@ -38,6 +39,9 @@ Route::get("/view",[DemoController::class,"view"] );
 
 
 //Class : 13 here
-Route::get("/tasks",[TaskController::class,"index"]);
+
 Route::get("/",[SiteController::class,'home']); 
-Route::get("/about",[SiteController::class,'home']); 
+Route::get("/menu",[SiteController::class,'menu']); 
+Route::get("/about",[SiteController::class,'about']); 
+Route::get('/reservations',[SiteController::class,'reservations']);
+Route::get('/demo/logic',[DemoHasinController::class,'logic']);
