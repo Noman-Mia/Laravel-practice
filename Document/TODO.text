@@ -1,0 +1,12 @@
+1. What is blade template engine
+2. Why blade template engine
+3. Lets php artisan make:controller DemoController
+4. How to connect your front end blade with controller
+5. CSR VS SSR & Reactive Front End
+------------------------------
+1. Pass Data Controller to Blade  {{}} Mutches == Vue.js = Alpine.js
+2. Blade if statement ====> Vue.js Conditional Rendering
+3. Blade loop ====> Vue.js List Rendering
+4. Blade foreach loop ====> Vue.js map
+5. Including Assets Like Img , CSS, Audio
+6. Including Subview ===> Vue.js Component Structure
